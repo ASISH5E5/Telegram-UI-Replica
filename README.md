@@ -1,4 +1,4 @@
-##Telegram UI Replica
+Telegram UI Replica
 Introduction
 
 This project is a pixel-perfect replica of the Telegram messaging application, created as part of an assignment for the position of Frontend React Developer at BeyondChats. The goal was to demonstrate my UI/UX skills and React expertise by replicating the Telegram mobile and desktop views.
