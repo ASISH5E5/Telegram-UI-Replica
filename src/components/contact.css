@@ -1,0 +1,170 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Adjusted grid columns for responsiveness */
+    gap: 20px;
+    height: calc(100vh - 60px); /* Subtracting header height assuming header height is 80px */
+  }
+  
+  .contacts, .messages {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background: #ffffff;
+   
+    height: 110%; /* Full height of container */
+  }
+  
+  .contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 10px; /* Increased padding for better touch targets */
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .contact:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      display: block; /* Changed to block for single column layout on smaller screens */
+      height: auto; /* Adjusted height to auto for responsiveness */
+    }
+  
+    .contacts, .messages {
+      width: 100%;
+      max-height: none;
+      height: auto; /* Adjusted height to auto for responsiveness */
+    }
+  
+    .mobile-hidden {
+      display: none;
+    }
+  }
+  
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .mid {
+    flex-grow: 1;
+    display: flex;
+    height: calc(100% - 4rem); /* Adjust according to your header height */
+  }
+  
+  .mid-contacts,
+  .mid-messages {
+    overflow: hidden;
+    height: 100%; /* Ensure these containers take the full available height */
+  }
+  
+  .contacts,
+  .messages {
+    overflow-y: auto;
+    height: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .mid {
+      flex-direction: column;
+    }
+  
+    .mid-contacts,
+    .mid-messages {
+      width: 100%;
+    }
+  }
+  
+  .contacts {
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .contact {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .contact.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .contact .icon {
+    margin-right: 0.5rem;
+  }
+  
+  .truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  @media (max-width: 768px) {
+    .contacts {
+      width: 100%;
+    }
+  }
+  /* Default styles */
+.contact {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.contact:hover {
+  background-color: #f0f0f0; /* Light gray */
+}
+
+.contact .truncate {
+  display: block;
+  width: 100%;
+}
+
+.contact .truncate .text-lg {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.contact .truncate .text-sm {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Dark mode styles */
+.dark-mode .contact {
+  background-color: #000;
+  border: 2px solid #00f; /* Blue border */
+  color: #fff; /* White text */
+}
+
+.dark-mode .contact:hover {
+  background-color: #111; /* Darker background on hover */
+}
+
+.dark-mode .contact .truncate .text-lg,
+.dark-mode .contact .truncate .text-sm {
+  color: #ccc; /* Light gray text */
+}

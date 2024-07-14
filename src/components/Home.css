@@ -1,0 +1,98 @@
+.nav {
+  background-color: rgb(23, 23, 62);
+  width: 100%;
+  min-height: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 25px;
+  color: white;
+  padding: 3px;
+}
+
+.home-container {
+  overflow-y: hidden;
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
+.nav {
+  background-color: #082b4e;
+}
+
+.fixed-date {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+body.dark-mode {
+  background-color: #3a3a3a;
+  color: white;
+}
+
+body.dark-mode .nav {
+  background-color: #313131;
+}
+
+body.dark-mode .fixed-date {
+  background-color: #000000;
+  color: white;
+}
+
+body.light-mode {
+  background-color: white;
+  color: black;
+}
+
+body.light-mode .nav {
+  background-color: black;
+  border: 1px solid blue;
+}
+
+body.light-mode .mid-messages {
+  color: white;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.dark-mode .nav {
+  background-color: rgb(49, 49, 49);
+  border: 1px solid blue;
+}
+
+body.dark-mode .mid-messages {
+  color: white;
+  background-color: black;
+}
+
+@media (min-width: 1024px) {
+  .mid-contacts {
+      display: block !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .mid {
+      flex-direction: column;
+  }
+
+  .mid-contacts {
+      height: 100%;
+      overflow-y: auto;
+  }
+
+  .mid-messages {
+      height: 0;
+      display: none;
+  }
+
+  .mid-messages.block {
+      display: block;
+  }
+}

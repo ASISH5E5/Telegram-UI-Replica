@@ -1,0 +1,62 @@
+/* Messages.css */
+
+/* Light Mode */
+.messages.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.messages.light-mode .message {
+  background-color: white;
+  color: black;
+}
+
+/* Dark Mode */
+.messages.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.messages.dark-mode .message {
+  background-color: black;
+  color: white;
+  border: 1px solid blue;
+}
+
+.messages.dark-mode .fixed-date {
+  background-color: gray;
+}
+
+.navbar.bg-gray-900 {
+  background-color: #1a1a1a;
+}
+
+.fixed-date.bg-gray-700 {
+  background-color: #333;
+}
+
+/* Fixed Date Container */
+
+/* Light Mode */
+.fixed-date-container {
+  background-color: white;
+}
+
+.fixed-date {
+  background-color: #f0f0f0;
+}
+
+/* Dark Mode */
+.dark-mode .fixed-date-container {
+  background-color: rgb(255, 255, 255);
+}
+
+.dark-mode .fixed-date {
+  background-color: #000000;
+  border: 1px solid red;
+  color: white;
+}
+
+.navbar {
+  border-bottom: 1px solid #1a365d;
+}

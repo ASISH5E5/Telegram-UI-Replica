@@ -1,0 +1,25 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .page-button {
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    background: #f0f0f0;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .page-button.active {
+    background: #007bff;
+    color: #fff;
+  }
+  
+  .page-button:hover {
+    background: #e0e0e0;
+  }
+  
