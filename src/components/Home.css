@@ -96,3 +96,38 @@ body.dark-mode .mid-messages {
       display: block;
   }
 }
+/* index.css */
+@media (max-width: 768px) {
+  .sidebar {
+    display: block;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: #2d3748; /* Dark background for dark mode */
+  }
+
+  .message-list {
+    display: none;
+    width: 100%;
+  }
+
+  .sidebar-open .message-list {
+    display: none;
+  }
+
+  .sidebar-open .sidebar {
+    display: block;
+  }
+
+  .sidebar-close .message-list {
+    display: block;
+  }
+
+  .sidebar-close .sidebar {
+    display: none;
+  }
+}
+

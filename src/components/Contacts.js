@@ -37,8 +37,8 @@ const Contacts = ({ page, onContactClick, isDarkMode }) => {
   };
 
   return (
-    <div className={`contacts h-full overflow-scroll ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
-      <h2 className="text-xl text-black font-bold mb-4">Contacts List</h2>
+    <div className={`contacts h-full overflow-y-auto ${isDarkMode ? 'bg-gray-900 text-white' : 'bg-white text-black'}`}>
+      <h2 className="text-xl font-bold mb-4">Contacts List</h2>
       {loading && <div>Loading...</div>}
       {error && <div>{error}</div>}
       {chats.length === 0 && !loading && !error && <p>No chats found.</p>}
@@ -47,7 +47,7 @@ const Contacts = ({ page, onContactClick, isDarkMode }) => {
           {chats.map((chat) => (
             <div
               key={chat.id}
-              className={`contact flex text-left py-2 px-1 ${activeChatId === chat.id ? 'active' : ''}`}
+              className={`contact flex text-left py-2 px-1 cursor-pointer ${activeChatId === chat.id ? 'active bg-blue-500 text-black' : ''}`}
               onClick={() => handleContactClick(chat.id)}
             >
               <FontAwesomeIcon icon={faUser} className="text-gray-600 mr-2" />
