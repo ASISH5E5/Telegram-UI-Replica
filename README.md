@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+Telegram UI Replica
+Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a pixel-perfect replica of the Telegram messaging application, created as part of an assignment for the position of Frontend React Developer at BeyondChats. The goal was to demonstrate my UI/UX skills and React expertise by replicating the Telegram mobile and desktop views.
 
-## Available Scripts
+Technologies Used
 
-In the project directory, you can run:
+ReactJS: The core framework used for building the application.
 
-### `npm start`
+Node Libraries: Various node libraries were used to support the development.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+MUI: Used for UI components to ensure consistency and responsiveness.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Axios: For making HTTP requests to the provided APIs.
 
-### `npm test`
+Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Responsive Design: The UI adapts to both desktop and mobile views.
 
-### `npm run build`
+Dark Mode: Users can switch between light and dark modes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Contacts and Messages: Displays a list of contacts and their messages using the provided APIs.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Navigation: Easy navigation between contacts and messages.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+API Endpoints Used
 
-### `npm run eject`
+Get All Chats:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+URL: https://devapi.beyondchats.com/api/get_all_chats?page=1 Method: GET Description: Returns a list of chats (paginated).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Get Chat Messages:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+URL: https://devapi.beyondchats.com/api/get_chat_messages?chat_id=3888 Method: GET Description: Returns a list of messages for a given chat ID.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+How to Run the Project Clone the repository:
 
-## Learn More
+bash
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Copy code
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+git clone https://github.com/yourusername/telegram-ui-replica.git
 
-### Code Splitting
+Navigate to the project directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+bash Copy code cd telegram-ui-replica Install dependencies:
 
-### Analyzing the Bundle Size
+bash Copy code npm install Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+bash Copy code npm start Open your browser and go to http://localhost:3000 to view the application.
 
-### Making a Progressive Web App
+Deployment The project is deployed and can be accessed at: Live Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Project Structure
 
-### Advanced Configuration
+src/: Contains all the source code.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+components/: Contains React components for Contacts, Messages, Header, and Home.
 
-### Deployment
+Images/: Contains images and other static assets.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+public/: Contains the public assets and the index.html file.
 
-### `npm run build` fails to minify
+Future Improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Implementing more features of the Telegram UI.
+
+Enhancing performance and optimization.
+
+Adding more detailed error handling and loading states.
+
+Conclusion
+
+This project was a great opportunity to showcase my skills in React and UI/UX design. I look forward to receiving feedback and improving based on it.
+
+License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Contact
+
+If you have any questions or need further information, please feel free to contact me via Asishkumarpydi@gmail.com.
