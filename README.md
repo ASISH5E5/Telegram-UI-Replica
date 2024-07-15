@@ -94,5 +94,6 @@ If you have any questions or need further information, please feel free to conta
 
 ## Screenshots
 
-![Screenshot 1](images/screenshot1.png)
-![Screenshot 2](images/logo.png)
+![Screenshot 1](Images/tgimg1.png)
+![Screenshot 2](Images/tgimg2.png)
+![Screenshot 2](Images/tgimg3.png)
